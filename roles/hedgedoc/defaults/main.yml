@@ -17,10 +17,9 @@ hedgedoc_config_dir_path: "{{ hedgedoc_base_path }}/config"
 hedgedoc_config_path: "{{ hedgedoc_config_dir_path }}/config.json"
 
 hedgedoc_config: {}
-
 hedgedoc_container_name: "hedgedoc"
 hedgedoc_container_image: "quay.io/hedgedoc/hedgedoc"
-hedgedoc_container_image_tag: ~
+hedgedoc_container_image_tag:
 hedgedoc_container_image_ref: "{{ hedgedoc_container_image }}:{{ hedgedoc_container_image_tag | default(hedgedoc_version + '-alpine', true) }}"
 hedgedoc_container_env: {}
 hedgedoc_container_labels: {}

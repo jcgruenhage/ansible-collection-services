@@ -12,19 +12,19 @@ hedgedoc_container_volumes_base:
 hedgedoc_config_merged:
   production: "{{ hedgedoc_config_base | combine(hedgedoc_config) }}"
 hedgedoc_config_base:
-  sessionSecret: '{{ hedgedoc_session_secret }}'
+  sessionSecret: "{{ hedgedoc_session_secret }}"
   protocolUseSSL: true
-  domain: '{{ hedgedoc_domain }}'
-  loglevel: '{{ hedgedoc_log_level }}'
+  domain: "{{ hedgedoc_domain }}"
+  loglevel: "{{ hedgedoc_log_level }}"
   hsts:
     enable: false
   csp:
     enable: false
-  cookiePolicy: 'lax'
+  cookiePolicy: "lax"
   db:
-    username: '{{ hedgedoc_db_username }}'
-    password: '{{ hedgedoc_db_password }}'
-    database: '{{ hedgedoc_db_database }}'
-    host: '{{ hedgedoc_db_host }}'
-    port: '{{ hedgedoc_db_port | int }}'
-    dialect: '{{ hedgedoc_db_dialect }}'
+    username: "{{ hedgedoc_db_username }}"
+    password: "{{ hedgedoc_db_password }}"
+    database: "{{ hedgedoc_db_database }}"
+    host: "{{ hedgedoc_db_host }}"
+    port: "{{ hedgedoc_db_port | int }}"
+    dialect: "{{ hedgedoc_db_dialect }}"
