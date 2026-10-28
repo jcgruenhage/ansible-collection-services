@@ -26,3 +26,4 @@ hedgedoc_container_labels: {}
 hedgedoc_container_ports:
   - 3000:3000
 hedgedoc_container_volumes: []
+hedgedoc_container_log_driver:
